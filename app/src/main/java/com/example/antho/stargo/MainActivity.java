@@ -22,7 +22,7 @@ public class MainActivity extends AppCompatActivity {
     private TextView mText3;
     private Button mButtonTUS;
     private Button mButtonMUS;
-    private Button ButtonIntroduction;
+
     private static final int PLACE_PICKER_REQUEST = 1;
 
     private static final LatLngBounds BOUNDS_MOUNTAIN_VIEW = new LatLngBounds(
@@ -39,16 +39,8 @@ public class MainActivity extends AppCompatActivity {
         mText3 = (TextView) findViewById(R.id.activity_main_text_3);
         mButtonTUS = (Button) findViewById(R.id.activity_main_button_tus);
         mButtonMUS = (Button) findViewById(R.id.activity_main_button_mus);
-        ButtonIntroduction = (Button) findViewById(R.id.introduction);
 
-        ButtonIntroduction.setOnClickListener(new View.OnClickListener() {
 
-            @Override
-            public void onClick(View v) {
-                Intent activityIntro = new Intent(MainActivity.this, Introduction.class);
-                startActivity(activityIntro);
-            }
-        });
 
         // action à effectuer au click sur TUS (Trouver Une Star)
         mButtonTUS.setOnClickListener(new View.OnClickListener() {
